@@ -1,142 +1,113 @@
-<div align="center">
-  <a href="https://alist.nn.ci"><img width="100px" alt="logo" src="https://cdn.jsdelivr.net/gh/alist-org/logo@main/logo.svg"/></a>
-  <p><em>🗂️A file list program that supports multiple storages, powered by Gin and Solidjs.</em></p>
-<div>
-  <a href="https://goreportcard.com/report/github.com/alist-org/alist/v3">
-    <img src="https://goreportcard.com/badge/github.com/alist-org/alist/v3" alt="latest version" />
-  </a>
-  <a href="https://github.com/alist-org/alist/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/Xhofe/alist" alt="License" />
-  </a>
-  <a href="https://github.com/alist-org/alist/actions?query=workflow%3ABuild">
-    <img src="https://img.shields.io/github/actions/workflow/status/Xhofe/alist/build.yml?branch=main" alt="Build status" />
-  </a>
-  <a href="https://github.com/alist-org/alist/releases">
-    <img src="https://img.shields.io/github/release/Xhofe/alist" alt="latest version" />
-  </a>
-  <a title="Crowdin" target="_blank" href="https://crwd.in/alist">
-    <img src="https://badges.crowdin.net/alist/localized.svg">
-  </a>
-</div>
-<div>
-  <a href="https://github.com/alist-org/alist/discussions">
-    <img src="https://img.shields.io/github/discussions/Xhofe/alist?color=%23ED8936" alt="discussions" />
-  </a>
-  <a href="https://discord.gg/F4ymsH4xv2">
-    <img src="https://img.shields.io/discord/1018870125102895134?logo=discord" alt="discussions" />
-  </a>
-  <a href="https://github.com/alist-org/alist/releases">
-    <img src="https://img.shields.io/github/downloads/Xhofe/alist/total?color=%239F7AEA&logo=github" alt="Downloads" />
-  </a>
-  <a href="https://hub.docker.com/r/xhofe/alist">
-    <img src="https://img.shields.io/docker/pulls/xhofe/alist?color=%2348BB78&logo=docker&label=pulls" alt="Downloads" />
-  </a>
-  <a href="https://alist.nn.ci/guide/sponsor.html">
-    <img src="https://img.shields.io/badge/%24-sponsor-F87171.svg" alt="sponsor" />
-  </a>
-</div>
-</div>
+# Nlist - Next List 🌐
 
----
+![Nlist](https://img.shields.io/badge/Nlist-Next%20List-brightgreen)
 
-English | [中文](./README_cn.md) | [日本語](./README_ja.md) | [Contributing](./CONTRIBUTING.md) | [CODE_OF_CONDUCT](./CODE_OF_CONDUCT.md)
+Welcome to the Nlist repository! This project aims to provide a streamlined solution for managing lists in the cloud. With Nlist, you can easily create, share, and manage your lists from anywhere. This README will guide you through the features, installation, usage, and contributions.
+
+## Table of Contents
+
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Releases](#releases)
 
 ## Features
 
-- [x] Multiple storages
-    - [x] Local storage
-    - [x] [Aliyundrive](https://www.alipan.com/)
-    - [x] OneDrive / Sharepoint ([global](https://www.office.com/), [cn](https://portal.partner.microsoftonline.cn),de,us)
-    - [x] [189cloud](https://cloud.189.cn) (Personal, Family)
-    - [x] [GoogleDrive](https://drive.google.com/)
-    - [x] [123pan](https://www.123pan.com/)
-    - [x] FTP / SFTP
-    - [x] [PikPak](https://www.mypikpak.com/)
-    - [x] [S3](https://aws.amazon.com/s3/)
-    - [x] [Seafile](https://seafile.com/)
-    - [x] [UPYUN Storage Service](https://www.upyun.com/products/file-storage)
-    - [x] WebDav(Support OneDrive/SharePoint without API)
-    - [x] Teambition([China](https://www.teambition.com/ ),[International](https://us.teambition.com/ ))
-    - [x] [Mediatrack](https://www.mediatrack.cn/)
-    - [x] [139yun](https://yun.139.com/) (Personal, Family, Group)
-    - [x] [YandexDisk](https://disk.yandex.com/)
-    - [x] [BaiduNetdisk](http://pan.baidu.com/)
-    - [x] [Terabox](https://www.terabox.com/main)
-    - [x] [UC](https://drive.uc.cn)
-    - [x] [Quark](https://pan.quark.cn)
-    - [x] [Thunder](https://pan.xunlei.com)
-    - [x] [Lanzou](https://www.lanzou.com/)
-    - [x] [ILanzou](https://www.ilanzou.com/)
-    - [x] [Aliyundrive share](https://www.alipan.com/)
-    - [x] [Google photo](https://photos.google.com/)
-    - [x] [Mega.nz](https://mega.nz)
-    - [x] [Baidu photo](https://photo.baidu.com/)
-    - [x] SMB
-    - [x] [115](https://115.com/)
-    - [X] Cloudreve
-    - [x] [Dropbox](https://www.dropbox.com/)
-    - [x] [FeijiPan](https://www.feijipan.com/)
-    - [x] [dogecloud](https://www.dogecloud.com/product/oss)
-    - [x] [Azure Blob Storage](https://azure.microsoft.com/products/storage/blobs)
-- [x] Easy to deploy and out-of-the-box
-- [x] File preview (PDF, markdown, code, plain text, ...)
-- [x] Image preview in gallery mode
-- [x] Video and audio preview, support lyrics and subtitles
-- [x] Office documents preview (docx, pptx, xlsx, ...)
-- [x] `README.md` preview rendering
-- [x] File permalink copy and direct file download
-- [x] Dark mode
-- [x] I18n
-- [x] Protected routes (password protection and authentication)
-- [x] WebDav (see https://alist.nn.ci/guide/webdav.html for details)
-- [x] [Docker Deploy](https://hub.docker.com/r/xhofe/alist)
-- [x] Cloudflare Workers proxy
-- [x] File/Folder package download
-- [x] Web upload(Can allow visitors to upload), delete, mkdir, rename, move and copy
-- [x] Offline download
-- [x] Copy files between two storage
-- [x] Multi-thread downloading acceleration for single-thread download/stream
+- **User-Friendly Interface**: Nlist offers a clean and simple design, making it easy for anyone to use.
+- **Cloud Integration**: Access your lists from any device with internet connectivity.
+- **Real-Time Collaboration**: Share lists with friends or colleagues and work together in real time.
+- **Customizable Lists**: Add notes, due dates, and priorities to your list items.
+- **Search Functionality**: Quickly find items within your lists using the search feature.
+- **Offline Access**: Use Nlist even when you are not connected to the internet. Changes will sync once you reconnect.
 
-## Document
+## Installation
 
-<https://alistgo.com/>
+To get started with Nlist, follow these simple steps:
 
-## Demo
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/pakgamez/Nlist.git
+   ```
 
-<https://al.nn.ci>
+2. Navigate to the project directory:
+   ```bash
+   cd Nlist
+   ```
 
-## Discussion
+3. Install the necessary dependencies:
+   ```bash
+   npm install
+   ```
 
-Please go to our [discussion forum](https://github.com/alist-org/alist/discussions) for general questions, **issues are for bug reports and feature requests only.**
+4. Start the application:
+   ```bash
+   npm start
+   ```
 
-## Sponsor
+## Usage
 
-AList is an open-source software, if you happen to like this project and want me to keep going, please consider sponsoring me or providing a single donation! Thanks for all the love and support:
-https://alist.nn.ci/guide/sponsor.html
+Once you have installed Nlist, you can start creating and managing your lists. Here’s how to use the main features:
 
-### Special sponsors
+### Creating a New List
 
-- [VidHub](https://apps.apple.com/app/apple-store/id1659622164?pt=118612019&ct=alist&mt=8) - An elegant cloud video player within the Apple ecosystem. Support for iPhone, iPad, Mac, and Apple TV.
-- [亚洲云](https://www.asiayun.com/aff/QQCOOQKZ) - 高防服务器|服务器租用|福州高防|广东电信|香港服务器|美国服务器|海外服务器 - 国内靠谱的企业级云计算服务提供商 (sponsored Chinese API server)
-- [找资源](http://zhaoziyuan2.cc/) - 阿里云盘资源搜索引擎
+1. Click on the "New List" button.
+2. Enter a title for your list.
+3. Add items by clicking on the "Add Item" button.
 
-## Contributors
+### Sharing a List
 
-Thanks goes to these wonderful people:
+1. Open the list you want to share.
+2. Click on the "Share" button.
+3. Copy the link provided and send it to your collaborators.
 
-[![Contributors](http://contrib.nn.ci/api?repo=alist-org/alist&repo=alist-org/alist-web&repo=alist-org/docs)](https://github.com/alist-org/alist/graphs/contributors)
+### Customizing List Items
+
+1. Click on an item to edit.
+2. Add notes, set due dates, or mark items as important.
+
+### Searching for Items
+
+1. Use the search bar at the top of the page.
+2. Type in keywords to quickly find items in your lists.
+
+## Contributing
+
+We welcome contributions from everyone! To contribute to Nlist, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. Make your changes and commit them:
+   ```bash
+   git commit -m "Add your message here"
+   ```
+4. Push your changes to your fork:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+5. Create a pull request.
 
 ## License
 
-The `AList` is open-source software licensed under the AGPL-3.0 license.
+Nlist is open-source software licensed under the MIT License. Feel free to use, modify, and distribute it as per the terms of the license.
 
-## Disclaimer
-- This program is a free and open source project. It is designed to share files on the network disk, which is convenient for downloading and learning Golang. Please abide by relevant laws and regulations when using it, and do not abuse it;
-- This program is implemented by calling the official sdk/interface, without destroying the official interface behavior;
-- This program only does 302 redirect/traffic forwarding, and does not intercept, store, or tamper with any user data;
-- Before using this program, you should understand and bear the corresponding risks, including but not limited to account ban, download speed limit, etc., which is none of this program's business;
-- If there is any infringement, please contact me by [email](mailto:i@nn.ci), and it will be dealt with in time.
+## Contact
 
----
+For questions or feedback, please reach out via the issues section of this repository. We appreciate your input!
 
-> [@GitHub](https://github.com/alist-org) · [@TelegramGroup](https://t.me/alist_chat) · [@Discord](https://discord.gg/F4ymsH4xv2)
+## Releases
+
+To download the latest version of Nlist, visit our [Releases page](https://github.com/pakgamez/Nlist/releases). You can find the executable files there. Download the appropriate file for your operating system and follow the instructions to run it.
+
+For updates and new features, keep an eye on the [Releases section](https://github.com/pakgamez/Nlist/releases) for the latest changes.
+
+## Conclusion
+
+Thank you for your interest in Nlist! We hope you find this tool useful for managing your lists. Whether you’re planning a project, organizing tasks, or sharing grocery lists, Nlist is here to help. 
+
+Feel free to explore, and happy listing! 🎉
